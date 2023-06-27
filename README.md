@@ -1,1 +1,1 @@
-# hairpin-vortex-extraction
+# Hairpin-Vortex-Extraction
