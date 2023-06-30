@@ -1,0 +1,520 @@
+{
+	"children" : 
+	[
+		{
+			"children" : null,
+			"name" : "1_1_0_Isovalue=-0.003631_Lambda2=0.006198_Lambdaci=0.036320_Q=0.005449_Delta=0.000000_Divergence=0.001972_Size=844.000000_Vorticity=0.495980_Enstrophy=0.143099_Velocity=0.463711_Acceleration=0.473777_Jacobian=0.954898_Curvature=1.634802_FullCurvature=0.009830_St=0.003734_Sp=0.004586_Sv=0.999967_Length=5.158142_Rho=0.707122"
+		},
+		{
+			"children" : 
+			[
+				{
+					"children" : null,
+					"name" : "50_5_2_Isovalue=-0.011252_Lambda2=0.007095_Lambdaci=0.043019_Q=0.009398_Delta=0.000000_Divergence=0.000436_Size=7572.000000_Vorticity=0.432730_Enstrophy=0.106030_Velocity=0.201439_Acceleration=0.217673_Jacobian=0.630221_Curvature=4.625678_FullCurvature=0.157262_St=0.247714_Sp=0.048985_Sv=0.897074_Length=4.135439_Rho=0.757317"
+				},
+				{
+					"children" : null,
+					"name" : "51_5_2_Isovalue=-0.011252_Lambda2=0.003166_Lambdaci=0.032083_Q=0.002994_Delta=0.000000_Divergence=-0.000104_Size=933.000000_Vorticity=1.399761_Enstrophy=2.454571_Velocity=0.237533_Acceleration=0.248596_Jacobian=1.637539_Curvature=1.770447_FullCurvature=0.001527_St=0.944993_Sp=0.227134_Sv=0.118289_Length=2.243777_Rho=0.729734"
+				}
+			],
+			"name" : "2_1_0_Isovalue=-0.003631_Lambda2=0.006514_Lambdaci=0.041378_Q=0.008432_Delta=0.000000_Divergence=0.000357_Size=8802.000000_Vorticity=0.562536_Enstrophy=0.420579_Velocity=0.206555_Acceleration=0.222098_Jacobian=0.765886_Curvature=4.062308_FullCurvature=0.406109_St=0.323927_Sp=0.129103_Sv=0.773873_Length=6.086334_Rho=0.813098"
+		},
+		{
+			"children" : null,
+			"name" : "3_1_0_Isovalue=-0.003631_Lambda2=0.004960_Lambdaci=0.034393_Q=0.011836_Delta=0.000000_Divergence=0.000156_Size=12220.000000_Vorticity=0.426521_Enstrophy=0.442921_Velocity=0.161320_Acceleration=0.174356_Jacobian=0.579565_Curvature=2.678388_FullCurvature=0.007462_St=0.022971_Sp=0.003154_Sv=0.999597_Length=3.824578_Rho=0.707328"
+		},
+		{
+			"children" : 
+			[
+				{
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"children" : 
+											[
+												{
+													"children" : null,
+													"name" : "101_13_74_Isovalue=-0.358787_Lambda2=0.120624_Lambdaci=0.151289_Q=0.050381_Delta=0.000125_Divergence=-0.001594_Size=1554.000000_Vorticity=0.759315_Enstrophy=0.379034_Velocity=0.341980_Acceleration=0.495913_Jacobian=1.169454_Curvature=4.512414_FullCurvature=0.644289_St=0.116087_Sp=0.683573_Sv=0.708804_Length=1.199577_Rho=0.715791"
+												},
+												{
+													"children" : null,
+													"name" : "102_13_74_Isovalue=-0.358787_Lambda2=0.066665_Lambdaci=0.110309_Q=0.042607_Delta=0.000062_Divergence=0.000897_Size=1888.000000_Vorticity=0.568958_Enstrophy=0.205837_Velocity=0.287576_Acceleration=0.387654_Jacobian=0.884412_Curvature=8.169042_FullCurvature=0.220070_St=0.177565_Sp=0.227341_Sv=0.956128_Length=0.444490_Rho=0.707817"
+												},
+												{
+													"children" : null,
+													"name" : "103_13_74_Isovalue=-0.358787_Lambda2=0.107997_Lambdaci=0.144072_Q=0.043356_Delta=0.000096_Divergence=-0.001731_Size=1680.000000_Vorticity=0.988785_Enstrophy=1.125687_Velocity=0.346085_Acceleration=0.489369_Jacobian=1.399763_Curvature=4.737426_FullCurvature=0.700807_St=0.139696_Sp=0.676979_Sv=0.707768_Length=1.309439_Rho=0.717591"
+												}
+											],
+											"name" : "74_8_59_Isovalue=-0.035641_Lambda2=0.093464_Lambdaci=0.131640_Q=0.043447_Delta=0.000089_Divergence=-0.000788_Size=5822.000000_Vorticity=0.750561_Enstrophy=0.539382_Velocity=0.324812_Acceleration=0.454253_Jacobian=1.129281_Curvature=3.712925_FullCurvature=0.695807_St=0.185427_Sp=0.223464_Sv=0.927730_Length=4.663250_Rho=0.752531"
+										},
+										{
+											"children" : null,
+											"name" : "75_8_59_Isovalue=-0.035641_Lambda2=0.007041_Lambdaci=0.054127_Q=0.000102_Delta=0.000000_Divergence=0.002694_Size=345.000000_Vorticity=0.351915_Enstrophy=0.072434_Velocity=0.430108_Acceleration=0.477290_Jacobian=0.817764_Curvature=4.652977_FullCurvature=0.042403_St=0.798774_Sp=0.540890_Sv=0.217494_Length=1.535639_Rho=0.714530"
+										},
+										{
+											"children" : null,
+											"name" : "76_8_59_Isovalue=-0.035641_Lambda2=0.006329_Lambdaci=0.054949_Q=0.003609_Delta=0.000000_Divergence=0.002648_Size=362.000000_Vorticity=0.380096_Enstrophy=0.083341_Velocity=0.439258_Acceleration=0.492306_Jacobian=0.864815_Curvature=1.503046_FullCurvature=0.007825_St=0.836484_Sp=0.511644_Sv=0.155881_Length=1.634576_Rho=0.711442"
+										}
+									],
+									"name" : "59_6_54_Isovalue=-0.015825_Lambda2=0.068687_Lambdaci=0.112162_Q=0.029173_Delta=0.000065_Divergence=-0.000218_Size=7754.000000_Vorticity=0.659380_Enstrophy=0.420476_Velocity=0.344637_Acceleration=0.455987_Jacobian=1.060681_Curvature=4.776634_FullCurvature=2.052437_St=0.438023_Sp=0.491155_Sv=0.456864_Length=9.202111_Rho=1.348697"
+								},
+								{
+									"children" : null,
+									"name" : "60_6_54_Isovalue=-0.015825_Lambda2=0.001859_Lambdaci=0.047001_Q=0.005785_Delta=0.000000_Divergence=0.000534_Size=889.000000_Vorticity=0.377022_Enstrophy=0.077472_Velocity=0.202827_Acceleration=0.225628_Jacobian=0.603620_Curvature=0.933861_FullCurvature=0.025958_St=0.656502_Sp=0.695599_Sv=0.150653_Length=3.535349_Rho=0.730343"
+								},
+								{
+									"children" : 
+									[
+										{
+											"children" : 
+											[
+												{
+													"children" : null,
+													"name" : "93_12_80_Isovalue=-0.223127_Lambda2=0.030508_Lambdaci=0.084467_Q=0.009937_Delta=0.000011_Divergence=0.000096_Size=2366.000000_Vorticity=0.651654_Enstrophy=0.269695_Velocity=0.215448_Acceleration=0.262861_Jacobian=0.887321_Curvature=3.498817_FullCurvature=0.005561_St=0.923655_Sp=0.233067_Sv=0.083274_Length=4.709905_Rho=0.742505"
+												},
+												{
+													"children" : null,
+													"name" : "94_12_80_Isovalue=-0.223127_Lambda2=0.013866_Lambdaci=0.080381_Q=0.012125_Delta=0.000001_Divergence=0.000189_Size=962.000000_Vorticity=0.415216_Enstrophy=0.113263_Velocity=0.366472_Acceleration=0.440703_Jacobian=0.878625_Curvature=2.293861_FullCurvature=0.053197_St=0.394799_Sp=0.895793_Sv=0.044597_Length=4.059837_Rho=0.772022"
+												}
+											],
+											"name" : "80_9_61_Isovalue=-0.055456_Lambda2=0.024479_Lambdaci=0.082062_Q=0.002006_Delta=0.000007_Divergence=0.000194_Size=3557.000000_Vorticity=0.568949_Enstrophy=0.215467_Velocity=0.262413_Acceleration=0.318030_Jacobian=0.877717_Curvature=2.796309_FullCurvature=0.126127_St=0.640200_Sp=0.616946_Sv=0.078664_Length=9.817039_Rho=0.943034"
+										},
+										{
+											"children" : null,
+											"name" : "81_9_61_Isovalue=-0.055456_Lambda2=0.012664_Lambdaci=0.061604_Q=0.008810_Delta=0.000001_Divergence=0.000699_Size=1955.000000_Vorticity=0.588185_Enstrophy=0.195355_Velocity=0.220257_Acceleration=0.244185_Jacobian=0.804696_Curvature=4.191385_FullCurvature=0.021637_St=0.503161_Sp=0.014454_Sv=0.796901_Length=3.447527_Rho=0.851219"
+										},
+										{
+											"children" : 
+											[
+												{
+													"children" : null,
+													"name" : "95_12_82_Isovalue=-0.223127_Lambda2=0.013550_Lambdaci=0.080503_Q=0.013716_Delta=0.000003_Divergence=0.000653_Size=887.000000_Vorticity=0.412469_Enstrophy=0.114083_Velocity=0.386241_Acceleration=0.463586_Jacobian=0.903544_Curvature=2.137210_FullCurvature=0.019545_St=0.355849_Sp=0.927892_Sv=0.021782_Length=3.055833_Rho=0.711875"
+												},
+												{
+													"children" : null,
+													"name" : "96_12_82_Isovalue=-0.223127_Lambda2=0.030554_Lambdaci=0.084592_Q=0.009008_Delta=0.000011_Divergence=0.000268_Size=2329.000000_Vorticity=0.634619_Enstrophy=0.257688_Velocity=0.216196_Acceleration=0.264736_Jacobian=0.874870_Curvature=4.347810_FullCurvature=0.011653_St=0.886468_Sp=0.255980_Sv=0.085582_Length=4.494758_Rho=0.767479"
+												}
+											],
+											"name" : "82_9_61_Isovalue=-0.055456_Lambda2=0.024829_Lambdaci=0.082785_Q=0.001497_Delta=0.000006_Divergence=0.000444_Size=3430.000000_Vorticity=0.562335_Enstrophy=0.210889_Velocity=0.266352_Acceleration=0.323413_Jacobian=0.878401_Curvature=2.788037_FullCurvature=0.078437_St=0.694161_Sp=0.539132_Sv=0.079989_Length=8.910926_Rho=0.859226"
+										}
+									],
+									"name" : "61_6_54_Isovalue=-0.015825_Lambda2=0.021220_Lambdaci=0.076933_Q=0.002615_Delta=0.000005_Divergence=0.000401_Size=9696.000000_Vorticity=0.565068_Enstrophy=0.205655_Velocity=0.251885_Acceleration=0.300565_Jacobian=0.854162_Curvature=9.365574_FullCurvature=3.638492_St=0.632599_Sp=0.502081_Sv=0.271662_Length=18.647427_Rho=1.661347"
+								},
+								{
+									"children" : null,
+									"name" : "62_6_54_Isovalue=-0.015825_Lambda2=0.002480_Lambdaci=0.047568_Q=0.004159_Delta=0.000000_Divergence=0.000536_Size=861.000000_Vorticity=0.396955_Enstrophy=0.085121_Velocity=0.195336_Acceleration=0.215902_Jacobian=0.610152_Curvature=3.742251_FullCurvature=0.082889_St=0.659153_Sp=0.708282_Sv=0.128822_Length=3.105156_Rho=0.728909"
+								}
+							],
+							"name" : "54_5_40_Isovalue=-0.011252_Lambda2=0.036882_Lambdaci=0.086616_Q=0.011527_Delta=0.000027_Divergence=0.000163_Size=19830.000000_Vorticity=0.578209_Enstrophy=0.272642_Velocity=0.282962_Acceleration=0.352615_Jacobian=0.904797_Curvature=12.087378_FullCurvature=25.065823_St=0.571952_Sp=0.483887_Sv=0.415270_Length=37.031476_Rho=3.008515"
+						},
+						{
+							"children" : null,
+							"name" : "55_5_40_Isovalue=-0.011252_Lambda2=0.002696_Lambdaci=0.049921_Q=0.002396_Delta=0.000001_Divergence=0.000755_Size=815.000000_Vorticity=0.357376_Enstrophy=0.071240_Velocity=0.135467_Acceleration=0.150599_Jacobian=0.501814_Curvature=8.076136_FullCurvature=0.003432_St=0.963935_Sp=0.100317_Sv=0.214229_Length=2.198676_Rho=0.733777"
+						}
+					],
+					"name" : "40_3_4_Isovalue=-0.006680_Lambda2=0.035150_Lambdaci=0.084787_Q=0.010801_Delta=0.000026_Divergence=0.000197_Size=20760.000000_Vorticity=0.567489_Enstrophy=0.262772_Velocity=0.275900_Acceleration=0.342889_Jacobian=0.885371_Curvature=13.678686_FullCurvature=32.923389_St=0.577648_Sp=0.449621_Sv=0.432747_Length=41.903276_Rho=3.361595"
+				},
+				{
+					"children" : 
+					[
+						{
+							"children" : null,
+							"name" : "48_4_41_Isovalue=-0.008204_Lambda2=0.002910_Lambdaci=0.050994_Q=0.003089_Delta=0.000001_Divergence=0.001477_Size=678.000000_Vorticity=0.369733_Enstrophy=0.076088_Velocity=0.123782_Acceleration=0.138899_Jacobian=0.502542_Curvature=0.437069_FullCurvature=0.000005_St=0.991774_Sp=0.125330_Sv=0.019669_Length=2.085366_Rho=0.707300"
+						},
+						{
+							"children" : null,
+							"name" : "49_4_41_Isovalue=-0.008204_Lambda2=0.000628_Lambdaci=0.024934_Q=0.003652_Delta=0.000000_Divergence=-0.003615_Size=218.000000_Vorticity=1.339800_Enstrophy=1.686091_Velocity=0.314039_Acceleration=0.325745_Jacobian=1.662993_Curvature=6.564611_FullCurvature=0.000311_St=0.978968_Sp=0.174461_Sv=0.104136_Length=0.383903_Rho=0.707196"
+						}
+					],
+					"name" : "41_3_4_Isovalue=-0.006680_Lambda2=0.002258_Lambdaci=0.043709_Q=0.003268_Delta=0.000001_Divergence=-0.000073_Size=945.000000_Vorticity=0.630480_Enstrophy=0.506209_Velocity=0.175732_Acceleration=0.189836_Jacobian=0.815340_Curvature=9.208862_FullCurvature=0.021674_St=0.912287_Sp=0.148156_Sv=0.316467_Length=2.279331_Rho=0.748548"
+				},
+				{
+					"children" : null,
+					"name" : "42_3_4_Isovalue=-0.006680_Lambda2=0.000402_Lambdaci=0.033681_Q=0.016921_Delta=0.000001_Divergence=-0.005679_Size=291.000000_Vorticity=2.860838_Enstrophy=7.031440_Velocity=0.384305_Acceleration=0.408100_Jacobian=3.286834_Curvature=1.942292_FullCurvature=0.003650_St=0.534766_Sp=0.829501_Sv=0.005911_Length=3.245784_Rho=0.712296"
+				}
+			],
+			"name" : "4_1_0_Isovalue=-0.003631_Lambda2=0.032777_Lambdaci=0.081733_Q=0.009525_Delta=0.000024_Divergence=0.000077_Size=22140.000000_Vorticity=0.613168_Enstrophy=0.401754_Velocity=0.272959_Acceleration=0.336463_Jacobian=0.926503_Curvature=12.887087_FullCurvature=40.033119_St=0.571491_Sp=0.429112_Sv=0.455574_Length=49.158955_Rho=3.785253"
+		},
+		{
+			"children" : 
+			[
+				{
+					"children" : null,
+					"name" : "77_9_5_Isovalue=-0.055456_Lambda2=0.018909_Lambdaci=0.095932_Q=0.003640_Delta=0.000003_Divergence=-0.003560_Size=2490.000000_Vorticity=0.759833_Enstrophy=0.352069_Velocity=0.384576_Acceleration=0.480035_Jacobian=1.224636_Curvature=5.903506_FullCurvature=1.023070_St=0.481890_Sp=0.259130_Sv=0.665983_Length=6.823228_Rho=0.978832"
+				},
+				{
+					"children" : null,
+					"name" : "78_9_5_Isovalue=-0.055456_Lambda2=0.008429_Lambdaci=0.056224_Q=0.001539_Delta=0.000001_Divergence=0.001720_Size=921.000000_Vorticity=0.423169_Enstrophy=0.117520_Velocity=0.117480_Acceleration=0.138150_Jacobian=0.559257_Curvature=3.159085_FullCurvature=0.000689_St=0.978823_Sp=0.101206_Sv=0.158367_Length=2.873321_Rho=0.714400"
+				},
+				{
+					"children" : null,
+					"name" : "79_9_5_Isovalue=-0.055456_Lambda2=0.008871_Lambdaci=0.055605_Q=0.001495_Delta=0.000001_Divergence=0.001858_Size=872.000000_Vorticity=0.405936_Enstrophy=0.107711_Velocity=0.112065_Acceleration=0.131689_Jacobian=0.536367_Curvature=0.842453_FullCurvature=0.000210_St=0.976292_Sp=0.091297_Sv=0.185538_Length=2.837927_Rho=0.711426"
+				}
+			],
+			"name" : "5_1_0_Isovalue=-0.003631_Lambda2=0.013865_Lambdaci=0.077560_Q=0.003254_Delta=0.000001_Divergence=-0.001298_Size=4685.000000_Vorticity=0.613025_Enstrophy=0.248836_Velocity=0.269117_Acceleration=0.331173_Jacobian=0.935624_Curvature=8.162873_FullCurvature=0.812948_St=0.717582_Sp=0.183525_Sv=0.502614_Length=10.707758_Rho=1.344302"
+		},
+		{
+			"children" : 
+			[
+				{
+					"children" : 
+					[
+						{
+							"children" : null,
+							"name" : "72_8_52_Isovalue=-0.035641_Lambda2=0.067683_Lambdaci=0.119618_Q=0.033840_Delta=0.000051_Divergence=0.000129_Size=6977.000000_Vorticity=0.737429_Enstrophy=0.614569_Velocity=0.335165_Acceleration=0.448736_Jacobian=1.125333_Curvature=3.562642_FullCurvature=0.467783_St=0.117882_Sp=0.153470_Sv=0.972221_Length=4.105883_Rho=0.722059"
+						},
+						{
+							"children" : null,
+							"name" : "73_8_52_Isovalue=-0.035641_Lambda2=0.006843_Lambdaci=0.043834_Q=0.028861_Delta=0.000006_Divergence=0.000855_Size=222.000000_Vorticity=3.654532_Enstrophy=10.890999_Velocity=0.442869_Acceleration=0.491051_Jacobian=4.171142_Curvature=4.602029_FullCurvature=0.002169_St=0.576672_Sp=0.750877_Sv=0.002282_Length=2.421279_Rho=0.819857"
+						}
+					],
+					"name" : "52_5_6_Isovalue=-0.011252_Lambda2=0.064643_Lambdaci=0.115894_Q=0.030710_Delta=0.000048_Divergence=0.000277_Size=7231.000000_Vorticity=0.883819_Enstrophy=1.133865_Velocity=0.340778_Acceleration=0.451179_Jacobian=1.278516_Curvature=5.535531_FullCurvature=1.670136_St=0.353810_Sp=0.344608_Sv=0.647303_Length=7.676459_Rho=0.963650"
+				},
+				{
+					"children" : null,
+					"name" : "53_5_6_Isovalue=-0.011252_Lambda2=0.003168_Lambdaci=0.060923_Q=0.006398_Delta=0.000001_Divergence=0.001151_Size=1153.000000_Vorticity=0.465331_Enstrophy=0.131308_Velocity=0.240118_Acceleration=0.273881_Jacobian=0.736469_Curvature=1.504395_FullCurvature=0.025285_St=0.752031_Sp=0.609971_Sv=0.112150_Length=4.480231_Rho=0.727349"
+				}
+			],
+			"name" : "6_1_0_Isovalue=-0.003631_Lambda2=0.054648_Lambdaci=0.106859_Q=0.024636_Delta=0.000040_Divergence=0.000419_Size=8490.000000_Vorticity=0.815000_Enstrophy=0.971182_Velocity=0.325642_Acceleration=0.423816_Jacobian=1.191205_Curvature=10.602882_FullCurvature=4.581512_St=0.469818_Sp=0.404737_Sv=0.532237_Length=12.038627_Rho=1.187718"
+		},
+		{
+			"children" : 
+			[
+				{
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"children" : 
+											[
+												{
+													"children" : null,
+													"name" : "86_11_83_Isovalue=-0.139291_Lambda2=0.126919_Lambdaci=0.149719_Q=0.051047_Delta=0.000208_Divergence=0.000086_Size=2136.000000_Vorticity=0.737564_Enstrophy=0.379962_Velocity=0.341859_Acceleration=0.503738_Jacobian=1.161405_Curvature=2.733767_FullCurvature=0.404452_St=0.260031_Sp=0.467561_Sv=0.825558_Length=2.085031_Rho=0.715989"
+												},
+												{
+													"children" : 
+													[
+														{
+															"children" : null,
+															"name" : "97_12_87_Isovalue=-0.223127_Lambda2=0.036568_Lambdaci=0.093326_Q=0.003259_Delta=0.000013_Divergence=-0.000488_Size=2161.000000_Vorticity=0.509393_Enstrophy=0.176007_Velocity=0.313123_Acceleration=0.392245_Jacobian=0.892682_Curvature=5.269784_FullCurvature=0.476445_St=0.704835_Sp=0.513586_Sv=0.239842_Length=8.647886_Rho=1.019460"
+														},
+														{
+															"children" : null,
+															"name" : "98_12_87_Isovalue=-0.223127_Lambda2=0.035475_Lambdaci=0.093004_Q=0.002868_Delta=0.000012_Divergence=-0.000340_Size=2252.000000_Vorticity=0.503654_Enstrophy=0.172948_Velocity=0.314895_Acceleration=0.395022_Jacobian=0.891405_Curvature=5.685268_FullCurvature=0.426182_St=0.736898_Sp=0.457060_Sv=0.227716_Length=9.325937_Rho=1.067629"
+														}
+													],
+													"name" : "87_11_83_Isovalue=-0.139291_Lambda2=0.035704_Lambdaci=0.093169_Q=0.002884_Delta=0.000012_Divergence=-0.000410_Size=4508.000000_Vorticity=0.505893_Enstrophy=0.174014_Velocity=0.312934_Acceleration=0.392371_Jacobian=0.890659_Curvature=6.709484_FullCurvature=1.976410_St=0.683168_Sp=0.474415_Sv=0.260988_Length=17.382134_Rho=1.788807"
+												},
+												{
+													"children" : null,
+													"name" : "88_11_83_Isovalue=-0.139291_Lambda2=0.093433_Lambdaci=0.123520_Q=0.034313_Delta=0.000140_Divergence=0.001526_Size=2797.000000_Vorticity=0.853503_Enstrophy=1.078074_Velocity=0.335861_Acceleration=0.468751_Jacobian=1.265045_Curvature=4.794394_FullCurvature=1.689270_St=0.421744_Sp=0.571601_Sv=0.493414_Length=6.400271_Rho=1.196761"
+												}
+											],
+											"name" : "83_10_67_Isovalue=-0.087466_Lambda2=0.068122_Lambdaci=0.111638_Q=0.019449_Delta=0.000086_Divergence=0.000274_Size=10496.000000_Vorticity=0.642869_Enstrophy=0.458770_Velocity=0.326976_Acceleration=0.439428_Jacobian=1.049531_Curvature=12.093938_FullCurvature=9.504937_St=0.567869_Sp=0.481395_Sv=0.307332_Length=23.162611_Rho=2.255138"
+										},
+										{
+											"children" : 
+											[
+												{
+													"children" : 
+													[
+														{
+															"children" : 
+															[
+																{
+																	"children" : 
+																	[
+																		{
+																			"children" : null,
+																			"name" : "112_15_109_Isovalue=-0.933438_Lambda2=0.174681_Lambdaci=0.229776_Q=0.018559_Delta=0.000108_Divergence=-0.005871_Size=2170.000000_Vorticity=1.390427_Enstrophy=1.333679_Velocity=0.487667_Acceleration=0.778318_Jacobian=2.123813_Curvature=3.548344_FullCurvature=0.351152_St=0.466343_Sp=0.421821_Sv=0.654923_Length=2.529535_Rho=0.775673"
+																		},
+																		{
+																			"children" : null,
+																			"name" : "113_15_109_Isovalue=-0.933438_Lambda2=0.170054_Lambdaci=0.224775_Q=0.014591_Delta=0.000096_Divergence=-0.006044_Size=2295.000000_Vorticity=1.701889_Enstrophy=2.605476_Velocity=0.501429_Acceleration=0.788468_Jacobian=2.447499_Curvature=4.046958_FullCurvature=0.499213_St=0.501724_Sp=0.450752_Sv=0.578400_Length=3.720144_Rho=0.832206"
+																		}
+																	],
+																	"name" : "109_14_104_Isovalue=-0.578282_Lambda2=0.171903_Lambdaci=0.227028_Q=0.016346_Delta=0.000102_Divergence=-0.005958_Size=4560.000000_Vorticity=1.550149_Enstrophy=1.987525_Velocity=0.494961_Acceleration=0.783754_Jacobian=2.290388_Curvature=2.286376_FullCurvature=0.302941_St=0.379402_Sp=0.189678_Sv=0.845190_Length=5.577978_Rho=0.796724"
+																},
+																{
+																	"children" : 
+																	[
+																		{
+																			"children" : 
+																			[
+																				{
+																					"children" : null,
+																					"name" : "119_16_114_Isovalue=-1.535526_Lambda2=0.323341_Lambdaci=0.272671_Q=0.056046_Delta=0.000313_Divergence=-0.002247_Size=2009.000000_Vorticity=1.557422_Enstrophy=1.642312_Velocity=0.634755_Acceleration=1.098957_Jacobian=2.562921_Curvature=2.316294_FullCurvature=0.048873_St=0.190265_Sp=0.073646_Sv=0.978855_Length=1.434301_Rho=0.707168"
+																				},
+																				{
+																					"children" : null,
+																					"name" : "120_16_114_Isovalue=-1.535526_Lambda2=0.317223_Lambdaci=0.265085_Q=0.054885_Delta=0.000307_Divergence=-0.002517_Size=2151.000000_Vorticity=1.727389_Enstrophy=2.369782_Velocity=0.629547_Acceleration=1.075415_Jacobian=2.709668_Curvature=3.522347_FullCurvature=0.122635_St=0.161908_Sp=0.091009_Sv=0.981716_Length=1.805351_Rho=0.707669"
+																				}
+																			],
+																			"name" : "114_15_110_Isovalue=-0.933438_Lambda2=0.316682_Lambdaci=0.267483_Q=0.054194_Delta=0.000306_Divergence=-0.002470_Size=4286.000000_Vorticity=1.639754_Enstrophy=2.008763_Velocity=0.633539_Acceleration=1.087983_Jacobian=2.636811_Curvature=2.795374_FullCurvature=0.184604_St=0.116821_Sp=0.067292_Sv=0.984650_Length=4.844329_Rho=0.715524"
+																		},
+																		{
+																			"children" : null,
+																			"name" : "115_15_110_Isovalue=-0.933438_Lambda2=0.041784_Lambdaci=0.184602_Q=0.041531_Delta=0.000122_Divergence=0.000123_Size=516.000000_Vorticity=1.188433_Enstrophy=0.925944_Velocity=0.340531_Acceleration=0.531721_Jacobian=1.776733_Curvature=1.980594_FullCurvature=0.007141_St=0.800307_Sp=0.522395_Sv=0.062326_Length=2.368503_Rho=0.727113"
+																		},
+																		{
+																			"children" : null,
+																			"name" : "116_15_110_Isovalue=-0.933438_Lambda2=0.036236_Lambdaci=0.176591_Q=0.045269_Delta=0.000088_Divergence=0.006083_Size=574.000000_Vorticity=1.698047_Enstrophy=2.213890_Velocity=0.400885_Acceleration=0.608468_Jacobian=2.353836_Curvature=5.321653_FullCurvature=0.030817_St=0.797521_Sp=0.457417_Sv=0.093622_Length=2.880995_Rho=0.749016"
+																		}
+																	],
+																	"name" : "110_14_104_Isovalue=-0.578282_Lambda2=0.246338_Lambdaci=0.246032_Q=0.029283_Delta=0.000257_Divergence=-0.001064_Size=5419.000000_Vorticity=1.597132_Enstrophy=1.910350_Velocity=0.572457_Acceleration=0.967380_Jacobian=2.510060_Curvature=3.274011_FullCurvature=0.736025_St=0.557540_Sp=0.267768_Sv=0.431363_Length=12.670300_Rho=1.344606"
+																},
+																{
+																	"children" : null,
+																	"name" : "111_14_104_Isovalue=-0.578282_Lambda2=0.148837_Lambdaci=0.192589_Q=0.011963_Delta=0.000094_Divergence=-0.000943_Size=4093.000000_Vorticity=1.159515_Enstrophy=1.156875_Velocity=0.448240_Acceleration=0.699001_Jacobian=1.825300_Curvature=5.971796_FullCurvature=2.356075_St=0.346393_Sp=0.374604_Sv=0.663893_Length=7.788642_Rho=1.113480"
+																}
+															],
+															"name" : "104_13_89_Isovalue=-0.358787_Lambda2=0.173491_Lambdaci=0.218285_Q=0.012977_Delta=0.000146_Divergence=-0.002174_Size=15757.000000_Vorticity=1.449750_Enstrophy=1.702704_Velocity=0.510291_Acceleration=0.825697_Jacobian=2.242340_Curvature=11.735633_FullCurvature=12.311199_St=0.602074_Sp=0.368202_Sv=0.436649_Length=29.465552_Rho=2.548718"
+														},
+														{
+															"children" : null,
+															"name" : "105_13_89_Isovalue=-0.358787_Lambda2=0.141840_Lambdaci=0.165041_Q=0.048142_Delta=0.000134_Divergence=0.001043_Size=1438.000000_Vorticity=0.854171_Enstrophy=0.489339_Velocity=0.361587_Acceleration=0.540218_Jacobian=1.309050_Curvature=3.011016_FullCurvature=0.605331_St=0.259614_Sp=0.529155_Sv=0.716572_Length=3.058720_Rho=0.758205"
+														},
+														{
+															"children" : null,
+															"name" : "106_13_89_Isovalue=-0.358787_Lambda2=0.237974_Lambdaci=0.313930_Q=0.066314_Delta=0.000909_Divergence=-0.002075_Size=1367.000000_Vorticity=2.240647_Enstrophy=4.961655_Velocity=0.566630_Acceleration=1.129810_Jacobian=3.516042_Curvature=2.650897_FullCurvature=0.065673_St=0.027182_Sp=0.020060_Sv=0.997607_Length=4.985130_Rho=0.707467"
+														},
+														{
+															"children" : 
+															[
+																{
+																	"children" : null,
+																	"name" : "117_16_107_Isovalue=-1.535526_Lambda2=0.161588_Lambdaci=0.184130_Q=0.010805_Delta=0.000260_Divergence=-0.000975_Size=1425.000000_Vorticity=0.896999_Enstrophy=0.600569_Velocity=0.388864_Acceleration=0.589387_Jacobian=1.483760_Curvature=2.815543_FullCurvature=0.234615_St=0.653817_Sp=0.537866_Sv=0.234491_Length=6.968367_Rho=0.977090"
+																},
+																{
+																	"children" : null,
+																	"name" : "118_16_107_Isovalue=-1.535526_Lambda2=0.154908_Lambdaci=0.179355_Q=0.007234_Delta=0.000251_Divergence=-0.000123_Size=1469.000000_Vorticity=0.881537_Enstrophy=0.586059_Velocity=0.389669_Acceleration=0.586831_Jacobian=1.472644_Curvature=2.824702_FullCurvature=0.249679_St=0.662193_Sp=0.541349_Sv=0.243063_Length=7.262157_Rho=0.993095"
+																}
+															],
+															"name" : "107_13_89_Isovalue=-0.358787_Lambda2=0.157359_Lambdaci=0.181591_Q=0.008863_Delta=0.000255_Divergence=-0.000578_Size=2962.000000_Vorticity=0.888952_Enstrophy=0.592074_Velocity=0.387550_Acceleration=0.585738_Jacobian=1.475624_Curvature=2.815763_FullCurvature=1.043258_St=0.601139_Sp=0.507943_Sv=0.288998_Length=14.916222_Rho=1.775785"
+														},
+														{
+															"children" : null,
+															"name" : "108_13_89_Isovalue=-0.358787_Lambda2=0.125778_Lambdaci=0.156034_Q=0.036562_Delta=0.000113_Divergence=0.003350_Size=1547.000000_Vorticity=1.264461_Enstrophy=1.977511_Velocity=0.374549_Acceleration=0.542345_Jacobian=1.737296_Curvature=3.595620_FullCurvature=0.768153_St=0.232446_Sp=0.491648_Sv=0.756009_Length=3.120095_Rho=0.766434"
+														}
+													],
+													"name" : "89_11_84_Isovalue=-0.139291_Lambda2=0.163718_Lambdaci=0.208360_Q=0.009248_Delta=0.000085_Divergence=-0.001385_Size=24742.000000_Vorticity=1.357485_Enstrophy=1.681693_Velocity=0.475410_Acceleration=0.765901_Jacobian=2.104477_Curvature=14.762849_FullCurvature=35.770028_St=0.553189_Sp=0.412000_Sv=0.422973_Length=51.625988_Rho=2.965661"
+												},
+												{
+													"children" : null,
+													"name" : "90_11_84_Isovalue=-0.139291_Lambda2=0.009168_Lambdaci=0.090481_Q=0.042870_Delta=0.000022_Divergence=0.004604_Size=290.000000_Vorticity=0.519954_Enstrophy=0.183085_Velocity=0.205128_Acceleration=0.259113_Jacobian=0.846100_Curvature=3.627235_FullCurvature=0.041041_St=0.626794_Sp=0.757751_Sv=0.063470_Length=2.678759_Rho=0.716619"
+												},
+												{
+													"children" : null,
+													"name" : "91_11_84_Isovalue=-0.139291_Lambda2=0.002808_Lambdaci=0.087678_Q=0.037032_Delta=0.000016_Divergence=0.003382_Size=306.000000_Vorticity=0.520994_Enstrophy=0.185804_Velocity=0.226851_Acceleration=0.281081_Jacobian=0.858114_Curvature=2.214873_FullCurvature=0.040957_St=0.543121_Sp=0.813742_Sv=0.072760_Length=2.989815_Rho=0.717546"
+												},
+												{
+													"children" : null,
+													"name" : "92_11_84_Isovalue=-0.139291_Lambda2=0.007035_Lambdaci=0.066409_Q=0.048886_Delta=0.000013_Divergence=0.012207_Size=92.000000_Vorticity=3.925492_Enstrophy=12.146754_Velocity=0.446139_Acceleration=0.529532_Jacobian=4.498816_Curvature=0.992229_FullCurvature=0.000010_St=0.935075_Sp=0.354139_Sv=0.001158_Length=1.287285_Rho=0.732979"
+												}
+											],
+											"name" : "84_10_67_Isovalue=-0.087466_Lambda2=0.155265_Lambdaci=0.202485_Q=0.006594_Delta=0.000079_Divergence=-0.001137_Size=25858.000000_Vorticity=1.343987_Enstrophy=1.705163_Velocity=0.466432_Acceleration=0.746283_Jacobian=2.075602_Curvature=14.849314_FullCurvature=54.649193_St=0.568642_Sp=0.437971_Sv=0.414163_Length=64.528215_Rho=3.792702"
+										},
+										{
+											"children" : null,
+											"name" : "85_10_67_Isovalue=-0.087466_Lambda2=0.099922_Lambdaci=0.199915_Q=0.032818_Delta=0.000338_Divergence=0.004566_Size=3640.000000_Vorticity=1.597736_Enstrophy=2.691088_Velocity=0.536571_Acceleration=0.822376_Jacobian=2.482265_Curvature=14.258860_FullCurvature=2.035987_St=0.272183_Sp=0.098468_Sv=0.854898_Length=7.401059_Rho=1.067351"
+										}
+									],
+									"name" : "67_7_56_Isovalue=-0.023447_Lambda2=0.123649_Lambdaci=0.175983_Q=0.005221_Delta=0.000041_Divergence=-0.000260_Size=41178.000000_Vorticity=1.172657_Enstrophy=1.452361_Velocity=0.438322_Acceleration=0.672839_Jacobian=1.835107_Curvature=19.903947_FullCurvature=154.694203_St=0.548983_Sp=0.466390_Sv=0.390250_Length=105.267344_Rho=5.010288"
+								},
+								{
+									"children" : null,
+									"name" : "68_7_56_Isovalue=-0.023447_Lambda2=0.0_Lambdaci=0.0_Q=0.0_Delta=0.0_Divergence=0.0_Size=0.000000_Vorticity=0.0_Enstrophy=0.0_Velocity=0.0_Acceleration=0.0_Jacobian=0.0_Curvature=0.0_FullCurvature=0.0_St=0.0_Sp=0.0_Sv=0.0_Length=0.000000_Rho=0.0"
+								}
+							],
+							"name" : "56_6_43_Isovalue=-0.015825_Lambda2=0.121756_Lambdaci=0.175335_Q=0.004664_Delta=0.000040_Divergence=-0.000093_Size=41633.000000_Vorticity=1.164406_Enstrophy=1.437632_Velocity=0.440872_Acceleration=0.674538_Jacobian=1.829707_Curvature=21.900135_FullCurvature=173.898460_St=0.558162_Sp=0.452554_Sv=0.390471_Length=109.584095_Rho=5.220199"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : null,
+									"name" : "69_7_57_Isovalue=-0.023447_Lambda2=0.020508_Lambdaci=0.085384_Q=0.003332_Delta=0.000004_Divergence=-0.000826_Size=1004.000000_Vorticity=0.486084_Enstrophy=0.147450_Velocity=0.174776_Acceleration=0.214065_Jacobian=0.698724_Curvature=3.873114_FullCurvature=0.047005_St=0.707494_Sp=0.539450_Sv=0.055682_Length=5.608184_Rho=0.839554"
+								},
+								{
+									"children" : null,
+									"name" : "70_7_57_Isovalue=-0.023447_Lambda2=0.007924_Lambdaci=0.046433_Q=0.008507_Delta=0.000000_Divergence=0.000856_Size=2634.000000_Vorticity=0.487740_Enstrophy=0.127195_Velocity=0.221362_Acceleration=0.237404_Jacobian=0.704453_Curvature=2.625527_FullCurvature=0.013513_St=0.042605_Sp=0.007052_Sv=0.997553_Length=3.164700_Rho=0.708248"
+								},
+								{
+									"children" : null,
+									"name" : "71_7_57_Isovalue=-0.023447_Lambda2=0.013743_Lambdaci=0.080459_Q=0.011037_Delta=0.000002_Divergence=-0.000152_Size=1173.000000_Vorticity=0.462237_Enstrophy=0.134304_Velocity=0.194444_Acceleration=0.236474_Jacobian=0.713159_Curvature=2.384472_FullCurvature=0.047867_St=0.631070_Sp=0.597669_Sv=0.054498_Length=6.624170_Rho=0.858020"
+								}
+							],
+							"name" : "57_6_43_Isovalue=-0.015825_Lambda2=0.011098_Lambdaci=0.062715_Q=0.000306_Delta=0.000000_Divergence=0.000171_Size=5671.000000_Vorticity=0.468989_Enstrophy=0.128236_Velocity=0.201453_Acceleration=0.229419_Jacobian=0.693236_Curvature=12.024987_FullCurvature=2.514043_St=0.637108_Sp=0.469705_Sv=0.227777_Length=13.749499_Rho=1.523519"
+						},
+						{
+							"children" : null,
+							"name" : "58_6_43_Isovalue=-0.015825_Lambda2=0.008428_Lambdaci=0.056366_Q=0.030633_Delta=0.000006_Divergence=0.001615_Size=348.000000_Vorticity=0.411269_Enstrophy=0.105948_Velocity=0.381071_Acceleration=0.496966_Jacobian=0.953686_Curvature=6.336194_FullCurvature=0.028158_St=0.673542_Sp=0.042317_Sv=0.620513_Length=1.557857_Rho=0.948502"
+						}
+					],
+					"name" : "43_3_7_Isovalue=-0.006680_Lambda2=0.105971_Lambdaci=0.159218_Q=0.003654_Delta=0.000034_Divergence=-0.000059_Size=48585.000000_Vorticity=1.065153_Enstrophy=1.253477_Velocity=0.408803_Acceleration=0.614449_Jacobian=1.671461_Curvature=21.531876_FullCurvature=197.890776_St=0.575094_Sp=0.447758_Sv=0.376156_Length=125.407073_Rho=5.885365"
+				},
+				{
+					"children" : null,
+					"name" : "44_3_7_Isovalue=-0.006680_Lambda2=0.003795_Lambdaci=0.035317_Q=0.005837_Delta=0.000000_Divergence=0.000810_Size=318.000000_Vorticity=0.275769_Enstrophy=0.040531_Velocity=0.095687_Acceleration=0.106105_Jacobian=0.367579_Curvature=0.647419_FullCurvature=0.000007_St=0.987508_Sp=0.152313_Sv=0.022582_Length=0.894332_Rho=0.707424"
+				},
+				{
+					"children" : null,
+					"name" : "45_3_7_Isovalue=-0.006680_Lambda2=0.002386_Lambdaci=0.028016_Q=0.001489_Delta=0.000000_Divergence=-0.000333_Size=510.000000_Vorticity=1.188264_Enstrophy=1.598193_Velocity=0.228249_Acceleration=0.238289_Jacobian=1.418251_Curvature=4.703989_FullCurvature=0.005414_St=0.915856_Sp=0.345323_Sv=0.097090_Length=1.435797_Rho=0.763076"
+				}
+			],
+			"name" : "7_1_0_Isovalue=-0.003631_Lambda2=0.103692_Lambdaci=0.156380_Q=0.003644_Delta=0.000033_Divergence=-0.000054_Size=49676.000000_Vorticity=1.058998_Enstrophy=1.245671_Velocity=0.403640_Acceleration=0.604980_Jacobian=1.655782_Curvature=21.758364_FullCurvature=198.641626_St=0.580812_Sp=0.450008_Sv=0.368957_Length=126.945354_Rho=5.980281"
+		},
+		{
+			"children" : null,
+			"name" : "8_1_0_Isovalue=-0.003631_Lambda2=0.065228_Lambdaci=0.147636_Q=0.014726_Delta=0.000010_Divergence=-0.003704_Size=69.000000_Vorticity=0.640712_Enstrophy=0.214628_Velocity=0.230218_Acceleration=0.318222_Jacobian=0.911224_Curvature=0.000000_FullCurvature=0.0_St=0.000000_Sp=0.000000_Sv=0.000000_Length=0.000000_Rho=0.0"
+		},
+		{
+			"children" : null,
+			"name" : "9_1_0_Isovalue=-0.003631_Lambda2=0.000123_Lambdaci=0.037584_Q=0.004680_Delta=0.000000_Divergence=0.000661_Size=375.000000_Vorticity=0.242238_Enstrophy=0.029803_Velocity=0.389534_Acceleration=0.446901_Jacobian=0.692748_Curvature=6.264011_FullCurvature=0.037357_St=0.156689_Sp=0.057004_Sv=0.985957_Length=0.405605_Rho=0.707138"
+		},
+		{
+			"children" : null,
+			"name" : "10_1_0_Isovalue=-0.003631_Lambda2=0.002750_Lambdaci=0.060174_Q=0.006775_Delta=0.000001_Divergence=0.001263_Size=1226.000000_Vorticity=0.432771_Enstrophy=0.104775_Velocity=0.247103_Acceleration=0.282522_Jacobian=0.713622_Curvature=4.638532_FullCurvature=0.095707_St=0.743518_Sp=0.609891_Sv=0.127313_Length=4.705469_Rho=0.727214"
+		},
+		{
+			"children" : null,
+			"name" : "11_1_0_Isovalue=-0.003631_Lambda2=0.001352_Lambdaci=0.031545_Q=0.001446_Delta=0.000000_Divergence=-0.000998_Size=106.000000_Vorticity=0.214155_Enstrophy=0.023615_Velocity=0.332501_Acceleration=0.365272_Jacobian=0.574832_Curvature=0.000000_FullCurvature=0.000000_St=0.000000_Sp=1.000000_Sv=0.000000_Length=0.001000_Rho=0.707107"
+		},
+		{
+			"children" : null,
+			"name" : "12_1_0_Isovalue=-0.003631_Lambda2=0.000700_Lambdaci=0.029919_Q=0.002065_Delta=0.000000_Divergence=0.000157_Size=113.000000_Vorticity=0.181515_Enstrophy=0.016652_Velocity=0.382929_Acceleration=0.415704_Jacobian=0.596344_Curvature=15.001832_FullCurvature=0.014024_St=0.125505_Sp=0.031019_Sv=0.984411_Length=0.085592_Rho=0.708444"
+		},
+		{
+			"children" : null,
+			"name" : "13_1_0_Isovalue=-0.003631_Lambda2=0.004922_Lambdaci=0.034342_Q=0.011994_Delta=0.000000_Divergence=-0.000061_Size=11629.000000_Vorticity=0.426868_Enstrophy=0.459064_Velocity=0.158912_Acceleration=0.171443_Jacobian=0.576730_Curvature=1.903780_FullCurvature=0.004132_St=0.020774_Sp=0.002405_Sv=0.999761_Length=3.885919_Rho=0.707119"
+		},
+		{
+			"children" : 
+			[
+				{
+					"children" : null,
+					"name" : "46_4_14_Isovalue=-0.008204_Lambda2=0.004758_Lambdaci=0.035388_Q=0.008257_Delta=0.000000_Divergence=0.000082_Size=4299.000000_Vorticity=0.371325_Enstrophy=0.089121_Velocity=0.162213_Acceleration=0.175720_Jacobian=0.529377_Curvature=2.800509_FullCurvature=0.709927_St=0.045908_Sp=0.279883_Sv=0.912819_Length=4.608936_Rho=0.761923"
+				},
+				{
+					"children" : null,
+					"name" : "47_4_14_Isovalue=-0.008204_Lambda2=0.003272_Lambdaci=0.034229_Q=0.010595_Delta=0.000003_Divergence=-0.016474_Size=428.000000_Vorticity=2.488754_Enstrophy=6.675211_Velocity=0.287366_Acceleration=0.308656_Jacobian=2.804522_Curvature=4.291283_FullCurvature=0.061607_St=0.513164_Sp=0.802188_Sv=0.069357_Length=2.131435_Rho=0.731788"
+				}
+			],
+			"name" : "14_1_0_Isovalue=-0.003631_Lambda2=0.003793_Lambdaci=0.035136_Q=0.006006_Delta=0.000000_Divergence=-0.001845_Size=4853.000000_Vorticity=0.615800_Enstrophy=0.853416_Velocity=0.176505_Acceleration=0.190938_Jacobian=0.792067_Curvature=2.585172_FullCurvature=1.044814_St=0.176907_Sp=0.356966_Sv=0.767987_Length=7.301125_Rho=0.869749"
+		},
+		{
+			"children" : null,
+			"name" : "15_1_0_Isovalue=-0.003631_Lambda2=0.000559_Lambdaci=0.037780_Q=0.004901_Delta=0.000001_Divergence=0.002159_Size=335.000000_Vorticity=0.305895_Enstrophy=0.051003_Velocity=0.251180_Acceleration=0.283639_Jacobian=0.592842_Curvature=15.941259_FullCurvature=0.000004_St=0.998029_Sp=0.053892_Sv=0.026656_Length=0.252494_Rho=0.707186"
+		},
+		{
+			"children" : null,
+			"name" : "16_1_0_Isovalue=-0.003631_Lambda2=0.006229_Lambdaci=0.038983_Q=0.005475_Delta=0.000000_Divergence=0.001958_Size=856.000000_Vorticity=0.496445_Enstrophy=0.143313_Velocity=0.462581_Acceleration=0.472734_Jacobian=0.954246_Curvature=2.753790_FullCurvature=0.017610_St=0.003002_Sp=0.004799_Sv=0.999964_Length=5.147108_Rho=0.707118"
+		},
+		{
+			"children" : 
+			[
+				{
+					"children" : 
+					[
+						{
+							"children" : null,
+							"name" : "99_13_38_Isovalue=-0.358787_Lambda2=0.015114_Lambdaci=0.106372_Q=0.010076_Delta=0.000012_Divergence=-0.008601_Size=1158.000000_Vorticity=0.788377_Enstrophy=0.381009_Velocity=0.347664_Acceleration=0.446266_Jacobian=1.232889_Curvature=2.893581_FullCurvature=0.286362_St=0.565189_Sp=0.484581_Sv=0.405428_Length=4.089906_Rho=0.952772"
+						},
+						{
+							"children" : null,
+							"name" : "100_13_38_Isovalue=-0.358787_Lambda2=0.016773_Lambdaci=0.106345_Q=0.009697_Delta=0.000008_Divergence=-0.010958_Size=1179.000000_Vorticity=0.852129_Enstrophy=0.509214_Velocity=0.349151_Acceleration=0.449458_Jacobian=1.295928_Curvature=6.918540_FullCurvature=0.871286_St=0.542676_Sp=0.435440_Sv=0.472489_Length=4.397139_Rho=0.994622"
+						}
+					],
+					"name" : "38_2_17_Isovalue=-0.005155_Lambda2=0.015833_Lambdaci=0.106057_Q=0.010066_Delta=0.000010_Divergence=-0.010050_Size=2363.000000_Vorticity=0.820273_Enstrophy=0.445352_Velocity=0.348398_Acceleration=0.447693_Jacobian=1.264485_Curvature=7.055771_FullCurvature=2.041414_St=0.537202_Sp=0.443594_Sv=0.425370_Length=9.368983_Rho=1.275033"
+				},
+				{
+					"children" : 
+					[
+						{
+							"children" : null,
+							"name" : "63_7_39_Isovalue=-0.023447_Lambda2=0.006600_Lambdaci=0.049128_Q=0.000129_Delta=0.000000_Divergence=0.000999_Size=1126.000000_Vorticity=0.546013_Enstrophy=0.167722_Velocity=0.209370_Acceleration=0.229183_Jacobian=0.762098_Curvature=2.309974_FullCurvature=0.039030_St=0.761868_Sp=0.522783_Sv=0.219647_Length=2.549281_Rho=0.744485"
+						},
+						{
+							"children" : null,
+							"name" : "64_7_39_Isovalue=-0.023447_Lambda2=0.025878_Lambdaci=0.079939_Q=0.007913_Delta=0.000008_Divergence=0.000331_Size=2953.000000_Vorticity=0.500675_Enstrophy=0.157346_Velocity=0.254387_Acceleration=0.313022_Jacobian=0.795415_Curvature=5.692731_FullCurvature=0.234735_St=0.692202_Sp=0.477678_Sv=0.131027_Length=8.956273_Rho=0.851281"
+						},
+						{
+							"children" : null,
+							"name" : "65_7_39_Isovalue=-0.023447_Lambda2=0.025851_Lambdaci=0.080244_Q=0.007500_Delta=0.000008_Divergence=0.000416_Size=2935.000000_Vorticity=0.499888_Enstrophy=0.157116_Velocity=0.255743_Acceleration=0.314600_Jacobian=0.797142_Curvature=5.282223_FullCurvature=0.217080_St=0.694277_Sp=0.471557_Sv=0.135719_Length=8.905571_Rho=0.850374"
+						},
+						{
+							"children" : null,
+							"name" : "66_7_39_Isovalue=-0.023447_Lambda2=0.006931_Lambdaci=0.049464_Q=0.000612_Delta=0.000000_Divergence=0.000962_Size=1159.000000_Vorticity=0.533265_Enstrophy=0.159406_Velocity=0.202820_Acceleration=0.223006_Jacobian=0.741805_Curvature=2.244702_FullCurvature=0.014023_St=0.855760_Sp=0.433984_Sv=0.210085_Length=1.890089_Rho=0.729535"
+						}
+					],
+					"name" : "39_2_17_Isovalue=-0.005155_Lambda2=0.019732_Lambdaci=0.070663_Q=0.005154_Delta=0.000006_Divergence=0.000548_Size=8676.000000_Vorticity=0.507820_Enstrophy=0.156680_Velocity=0.238167_Acceleration=0.285352_Jacobian=0.777087_Curvature=13.305542_FullCurvature=4.394540_St=0.693216_Sp=0.373108_Sv=0.273450_Length=24.982638_Rho=1.809694"
+				}
+			],
+			"name" : "17_1_0_Isovalue=-0.003631_Lambda2=0.018779_Lambdaci=0.078485_Q=0.001670_Delta=0.000002_Divergence=-0.001936_Size=11078.000000_Vorticity=0.580558_Enstrophy=0.224591_Velocity=0.263097_Acceleration=0.321873_Jacobian=0.889235_Curvature=11.066360_FullCurvature=12.060170_St=0.605081_Sp=0.386069_Sv=0.390099_Length=35.415830_Rho=2.392119"
+		},
+		{
+			"children" : null,
+			"name" : "19_1_0_Isovalue=-0.003631_Lambda2=0.000472_Lambdaci=0.034321_Q=0.011655_Delta=0.000000_Divergence=-0.001721_Size=166.000000_Vorticity=0.735192_Enstrophy=0.292835_Velocity=0.316307_Acceleration=0.330803_Jacobian=1.064408_Curvature=0.887588_FullCurvature=0.000009_St=0.992950_Sp=0.053797_Sv=0.105577_Length=0.903349_Rho=0.707109"
+		},
+		{
+			"children" : null,
+			"name" : "20_1_0_Isovalue=-0.003631_Lambda2=0.005903_Lambdaci=0.062066_Q=0.034208_Delta=0.000008_Divergence=-0.002095_Size=275.000000_Vorticity=0.307719_Enstrophy=0.056713_Velocity=0.136140_Acceleration=0.161059_Jacobian=0.530295_Curvature=6.149054_FullCurvature=0.000641_St=0.979648_Sp=0.169677_Sv=0.106428_Length=1.056227_Rho=0.707155"
+		},
+		{
+			"children" : null,
+			"name" : "21_1_0_Isovalue=-0.003631_Lambda2=0.016596_Lambdaci=0.058260_Q=0.034520_Delta=0.000005_Divergence=0.001273_Size=69.000000_Vorticity=0.382564_Enstrophy=0.083668_Velocity=0.139249_Acceleration=0.179724_Jacobian=0.618578_Curvature=10.146656_FullCurvature=0.003925_St=0.865995_Sp=0.493944_Sv=0.035967_Length=0.550513_Rho=0.707378"
+		},
+		{
+			"children" : null,
+			"name" : "24_1_0_Isovalue=-0.003631_Lambda2=0.016139_Lambdaci=0.051818_Q=0.034010_Delta=0.000005_Divergence=0.002230_Size=93.000000_Vorticity=0.352925_Enstrophy=0.073615_Velocity=0.140123_Acceleration=0.177977_Jacobian=0.588140_Curvature=7.001285_FullCurvature=0.005605_St=0.889329_Sp=0.453367_Sv=0.055346_Length=1.012105_Rho=0.707256"
+		},
+		{
+			"children" : null,
+			"name" : "26_1_0_Isovalue=-0.003631_Lambda2=0.007101_Lambdaci=0.060781_Q=0.036004_Delta=0.000009_Divergence=-0.002171_Size=302.000000_Vorticity=0.299693_Enstrophy=0.054663_Velocity=0.135761_Acceleration=0.160268_Jacobian=0.525649_Curvature=5.782715_FullCurvature=0.000526_St=0.980545_Sp=0.181296_Sv=0.067053_Length=1.445849_Rho=0.707507"
+		},
+		{
+			"children" : null,
+			"name" : "27_1_0_Isovalue=-0.003631_Lambda2=0.000638_Lambdaci=0.038675_Q=0.008431_Delta=0.000001_Divergence=0.001969_Size=427.000000_Vorticity=1.426955_Enstrophy=4.128039_Velocity=0.423898_Acceleration=0.475783_Jacobian=1.909596_Curvature=3.180863_FullCurvature=0.065860_St=0.411489_Sp=0.154555_Sv=0.882090_Length=0.976258_Rho=0.716573"
+		},
+		{
+			"children" : null,
+			"name" : "29_1_0_Isovalue=-0.003631_Lambda2=0.000045_Lambdaci=0.033454_Q=0.010807_Delta=0.000000_Divergence=-0.001627_Size=156.000000_Vorticity=0.735077_Enstrophy=0.292094_Velocity=0.327375_Acceleration=0.342101_Jacobian=1.075284_Curvature=10.285286_FullCurvature=0.000035_St=0.994340_Sp=0.056004_Sv=0.090177_Length=0.376131_Rho=0.707112"
+		},
+		{
+			"children" : null,
+			"name" : "30_1_0_Isovalue=-0.003631_Lambda2=0.000186_Lambdaci=0.031270_Q=0.007254_Delta=0.000001_Divergence=0.004254_Size=379.000000_Vorticity=0.635055_Enstrophy=0.450306_Velocity=0.308707_Acceleration=0.335396_Jacobian=0.976219_Curvature=13.809902_FullCurvature=0.140749_St=0.713890_Sp=0.404644_Sv=0.326756_Length=0.659535_Rho=0.939673"
+		},
+		{
+			"children" : null,
+			"name" : "31_1_0_Isovalue=-0.003631_Lambda2=0.001257_Lambdaci=0.032475_Q=0.005433_Delta=0.000000_Divergence=0.001424_Size=115.000000_Vorticity=1.467853_Enstrophy=4.171369_Velocity=0.420645_Acceleration=0.452158_Jacobian=1.921657_Curvature=7.306253_FullCurvature=0.002384_St=0.705553_Sp=0.012550_Sv=0.708431_Length=0.401716_Rho=0.707172"
+		},
+		{
+			"children" : null,
+			"name" : "32_1_0_Isovalue=-0.003631_Lambda2=0.002127_Lambdaci=0.033243_Q=0.005170_Delta=0.000000_Divergence=0.000680_Size=92.000000_Vorticity=1.062244_Enstrophy=2.221302_Velocity=0.355718_Acceleration=0.388574_Jacobian=1.449748_Curvature=0.000000_FullCurvature=0.000000_St=0.000000_Sp=0.707107_Sv=0.707107_Length=0.001414_Rho=0.707107"
+		},
+		{
+			"children" : null,
+			"name" : "33_1_0_Isovalue=-0.003631_Lambda2=0.012131_Lambdaci=0.050959_Q=0.046450_Delta=0.000012_Divergence=0.028615_Size=62.000000_Vorticity=3.722803_Enstrophy=11.064452_Velocity=0.446084_Acceleration=0.496428_Jacobian=4.276159_Curvature=7.212526_FullCurvature=0.000000_St=0.732843_Sp=0.680386_Sv=0.000000_Length=0.653815_Rho=0.707112"
+		},
+		{
+			"children" : null,
+			"name" : "35_1_0_Isovalue=-0.003631_Lambda2=0.011395_Lambdaci=0.038179_Q=0.036974_Delta=0.000010_Divergence=0.021417_Size=58.000000_Vorticity=3.931074_Enstrophy=12.554254_Velocity=0.484525_Acceleration=0.523917_Jacobian=4.511845_Curvature=4.409372_FullCurvature=0.000000_St=0.735689_Sp=0.649435_Sv=0.000000_Length=0.318428_Rho=0.708783"
+		},
+		{
+			"children" : null,
+			"name" : "36_1_0_Isovalue=-0.003631_Lambda2=0.001360_Lambdaci=0.030531_Q=0.022799_Delta=0.000003_Divergence=-0.007579_Size=48.000000_Vorticity=3.177552_Enstrophy=8.213603_Velocity=0.366979_Acceleration=0.391985_Jacobian=3.602772_Curvature=39.269908_FullCurvature=0.000000_St=0.000000_Sp=0.500000_Sv=0.000000_Length=0.003000_Rho=0.707107"
+		}
+	],
+	"name" : "root"
+}
