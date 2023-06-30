@@ -2,6 +2,8 @@
 
 > This repository is a work in progress...
 
+** Required Python >= 3.9**
+
 We have uploaded the code for the interactive visualization system so far. We will upload the code for the remaining modules soon.
 
 ### How to run the interactive visualization code
