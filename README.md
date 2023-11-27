@@ -1,6 +1,8 @@
-# Hairpin-Vortex-Extraction
+# Extract and Characterize Hairpin Vortices in Turbulent Flows
 
 > This repository is a work in progress...
+
+This repository is the implementation of paper "A. Zafar, D. Yang and G. Chen, "Extract and Characterize Hairpin Vortices in Turbulent Flows," in IEEE Transactions on Visualization and Computer Graphics, doi: 10.1109/TVCG.2023.3326603."
 
 ### How to run the code
 - Download the code or clone the repository. In the first step, go the the folder "splitting" and follow the readme instructions.
