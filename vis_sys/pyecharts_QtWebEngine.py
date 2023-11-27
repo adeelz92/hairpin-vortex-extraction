@@ -141,6 +141,7 @@ class MainWindow(QMainWindow):
     def __init__(self, parent=None):
         Qt.QMainWindow.__init__(self, parent)
 
+
         ''' Step 1: Create main layout '''
         self.setWindowTitle('Regions Tree')
         # self.resize(1000, 1000)
@@ -149,11 +150,13 @@ class MainWindow(QMainWindow):
         self.frame.setLayout(self.mainLayout)
         self.setCentralWidget(self.frame)
 
+
         ''' Step 2: Create left layout for dataset and tree visualization '''
         self.leftWidget = Qt.QWidget()
         self.left_panel_layout = Qt.QVBoxLayout()
         self.leftWidget.setLayout(self.left_panel_layout)
         self.mainLayout.addWidget(self.leftWidget, stretch=3)
+
 
         ''' Step 3: Add a vtk widget to the left widget '''
         # As we use QVBoxLayout, the vtk widget will be automatically moved to the top
@@ -162,6 +165,7 @@ class MainWindow(QMainWindow):
         self.vtkWidget = MyQVTKRenderWindowInteractor(self.ren1, self.pick_regions, self.remove_regions)
         ''' To do: Configure self.vtkWidget for self.ren2'''
         self.left_panel_layout.addWidget(self.vtkWidget, stretch=1)
+
 
         ''' Step 4: Add a graph view widget to the central widget '''
         self.webPlotView = QWebEngineView()
@@ -172,20 +176,24 @@ class MainWindow(QMainWindow):
         # Initialize the vtk variables for the visualization
         self.init_vtk_widget()
 
+
         ''' Step 5: Create right layout for controls and graphs visualization '''
         self.rightWidget = Qt.QWidget()
         self.right_panel_layout = Qt.QVBoxLayout()
         self.rightWidget.setLayout(self.right_panel_layout)
         self.mainLayout.addWidget(self.rightWidget, stretch=2)
 
+
         ''' Step 6: Add controls to the interface '''
         self.add_controls()
+
 
         ''' Step 7: Add a web view widget to the left widget '''
         self.webTreeView = QWebEngineView()
         self.treePage = _LoggedPage(self)
         self.webTreeView.setPage(self.treePage)
         self.right_panel_layout.addWidget(self.webTreeView, stretch=2)
+
 
         ''' Step 8: Add a graph view widget to the central widget '''
         # self.graph = PlotCanvas()
@@ -258,6 +266,7 @@ class MainWindow(QMainWindow):
         sortBoxlabel.setMaximumWidth(int(sortBoxlabel.width() / 15))
         sortBox_layout.addWidget(sortBoxlabel, stretch=1)
 
+        self.size_factor = 1
         '''
         36 criteria are being used for vortex profile construction which are below
         0. lambda_2				1. lambda_ci			2. Q
@@ -287,7 +296,7 @@ class MainWindow(QMainWindow):
         self.nNodes_scale = Qt.QDoubleSpinBox()
         # set the initial values of some parameters
         self.nNodes_scale.setValue(10)
-        self.nNodes_scale.setRange(1, 100)
+        self.nNodes_scale.setRange(1, 1000000)
         self.nNodes_scale.setSingleStep(1)
         sortBox_layout.addWidget(self.nNodes_scale, stretch=1)
 
@@ -452,6 +461,7 @@ class MainWindow(QMainWindow):
         self.reviseTreeJson(j)
         self.treeData = [j]
         print(self.childList)
+        print(self.itemsList)
         self.sortMenu.addItems(self.itemsList)
 
         # Find the index of Lambda2
@@ -467,15 +477,36 @@ class MainWindow(QMainWindow):
         clusters = np.loadtxt(clusters_file_name)
         self.cluster_data = [list(x) for x in clusters]
 
+        self.symbol_codes = dict({'Lambda2': "\u03BB_2", 'Lambdaci': "\u03BB_ci", 'Q': "Q", 'Delta': "\u0394",
+                        'Divergence': "Div", 'Oyf': "\u03C9_y\'", 'Size': "Size", 'Vorticity': "\u03C9",
+                        'Enstrophy': "\u03BE", 'Velocity': "u", 'Acceleration': "a", 'Jacobian': "J",
+                        'Curvature': "C", 'FullCurvature': "C_h", 'St': "St", 'Sp': "Sp", 'Sv': "Sv",
+                        'Length': "L", 'Rho': "\u03C1"})
+
         # Sort and load the tree
         self.sort_nodes()
 
         # Load the scatter plot
         clusters = [x[-1] for x in self.cluster_data]
-        elements, counts = np.unique(clusters, return_index=True)
-        nClusters = len(counts)
-        clus_data = [arr[-3:] for arr in self.cluster_data]
+        elements = np.unique(clusters, return_index=False)
+
+        nClusters = len(elements)
+        clus_data = [arr[-3:] for arr in self.cluster_data]\
+
+        # Generate random color codes
+        def generate_color():
+            import random
+            return "#{:06x}".format(random.randint(0, 0xFFFFFF))
+
+        # Ensure uniqueness
+        color_codes = set()
+        while len(color_codes) <= nClusters:
+            color_codes.add(generate_color())
+
+        self.color_codes = list(color_codes)
+
         self.update_and_load_scatter(data=clus_data, n_clusters=nClusters)
+        print(elements)
 
     def on_selection_mode_changed(self):
         radioButton = self.sender()
@@ -537,22 +568,24 @@ class MainWindow(QMainWindow):
         textStyle = dict()
         textStyle.update(fontWeight='bold')
 
-        width = self.webPlotView.width()
-        height = self.webPlotView.height()
+        width = self.webPlotView.width() * self.size_factor
+        height = self.webPlotView.height() * self.size_factor
         parallelChart = Parallel(init_opts=opts.InitOpts(animation_opts=opts.AnimationOpts(animation=False),
                                                          width="{}px".format(width), height="{}px".format(height)))
         parallelChart.options.update(parallel=opts.ParallelOpts(pos_top="15%", pos_right="5%"))
 
         numdims = len(data[0]["value"])
 
-        axis_labels = opts.LabelOpts(font_size=8)
-        axis_labels.update(width=25, overflow="truncate")
-        textStyle = {"fontWeight": "bold", "fontSize": 12}
+        axis_labels = opts.LabelOpts(font_size=10 * self.size_factor)
+        axis_labels.update(width=50, overflow="truncate")
+        textStyle = {"fontWeight": "bold", "fontSize": 16 * self.size_factor}
+
+
         # textStyle.update(nameTextStyle={})
         pcp = (
             parallelChart
                 .add_schema(
-                schema=[dict({'dim':i, 'name':str(self.itemsList[i-3]), 'type':'value',
+                schema=[dict({'dim':i, 'name':self.symbol_codes.get(self.itemsList[i-3]), 'type':'value',
                               'nameLocation': 'end' if i%2 ==0 else 'start',
                               'axisLabel': axis_labels, 'nameTextStyle':textStyle})
                         for i in range(3, numdims)])
@@ -560,49 +593,6 @@ class MainWindow(QMainWindow):
                 .set_global_opts(title_opts=opts.TitleOpts(title="PCP View"),
                                  legend_opts=opts.LegendOpts(is_show=False))
         )
-
-        """
-        pcp = (
-            parallelChart
-                .add_schema(
-                [
-                    dict({'dim': 3, 'name': "\u03BB_2", 'type':'value', 'nameLocation': 'end', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 4, 'name': "\u03BB_ci", 'type':'value', 'nameLocation': 'start', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 5, 'name': "Q", 'type':'value', 'nameLocation': 'end', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 6, 'name': "\u0394", 'type':'value', 'nameLocation': 'start', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 7, 'name': "Div", 'type':'value', 'nameLocation': 'end', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 8, 'name': "\u03C9yf", 'type':'value', 'nameLocation': 'start', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 9, 'name': "Size", 'type':'value', 'nameLocation': 'end', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 10, 'name': "\u03C9", 'type':'value', 'nameLocation': 'start', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 11, 'name': "\u03BE", 'type':'value', 'nameLocation': 'end', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 12, 'name': "V", 'type':'value', 'nameLocation': 'start', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 13, 'name': "a", 'type':'value', 'nameLocation': 'end', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 14, 'name': "J", 'type':'value', 'nameLocation': 'start', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 15, 'name': "Vx", 'type':'value', 'nameLocation': 'end', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 16, 'name': "Vy", 'type':'value', 'nameLocation': 'start', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 17, 'name': "Vz", 'type':'value', 'nameLocation': 'end', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 18, 'name': "Ax", 'type':'value', 'nameLocation': 'start', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 19, 'name': "Ay", 'type':'value', 'nameLocation': 'end', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 20, 'name': "Az", 'type':'value', 'nameLocation': 'start', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 21, 'name': "\u03C9x", 'type':'value', 'nameLocation': 'end', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 22, 'name': "\u03C9y", 'type':'value', 'nameLocation': 'start', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 23, 'name': "\u03C9z", 'type':'value', 'nameLocation': 'end', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 24, 'name': "J11", 'type':'value', 'nameLocation': 'start', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 25, 'name': "J12", 'type':'value', 'nameLocation': 'end', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 26, 'name': "J13", 'type':'value', 'nameLocation': 'start', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 27, 'name': "J21", 'type':'value', 'nameLocation': 'end', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 28, 'name': "J22", 'type':'value', 'nameLocation': 'start', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 29, 'name': "J23", 'type':'value', 'nameLocation': 'end', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 30, 'name': "J31", 'type':'value', 'nameLocation': 'start', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 31, 'name': "J32", 'type':'value', 'nameLocation': 'end', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                    dict({'dim': 32, 'name': "J33", 'type':'value', 'nameLocation': 'start', 'axisLabel': a, 'axisTick': b, 'nameTextStyle':textStyle}),
-                ],
-            )
-                .add("", data, linestyle_opts=opts.LineStyleOpts(opacity=0.5))
-                .set_global_opts(title_opts=opts.TitleOpts(title="PCP View"),
-                                 legend_opts=opts.LegendOpts(is_show=False))
-        )
-        """
 
         # fmt: off
         pcp.add_js_funcs("chart_" + pcp.chart_id + ".on('click', function(params) { console.log(params.value); });")
@@ -620,20 +610,24 @@ class MainWindow(QMainWindow):
     def update_and_load_tree(self, data):
 
         # print(self.webTreeView.size())
-        width = self.webTreeView.width()
-        height = self.webTreeView.height()
+        width = self.webTreeView.width() * self.size_factor
+        height = self.webTreeView.height() * self.size_factor
 
         tree = (
             Tree(init_opts=opts.InitOpts(width="{}px".format(width), height="{}px".format(height)))
                 .add("", data,
                      # pos_top="-10%", pos_bottom="-10%",
-                     symbol_size=15, is_roam=True,
+                     symbol_size=15 * self.size_factor, is_roam=True,
                      is_expand_and_collapse=False,
                      label_opts=opts.LabelOpts(is_show=False),
                      leaves_label_opts=opts.LabelOpts(is_show=False),
-                     itemstyle_opts=opts.ItemStyleOpts(color='Red'))
+                     itemstyle_opts=opts.ItemStyleOpts(color='Red'),)
                 .set_global_opts(title_opts=opts.TitleOpts(title="Tree View"))
         )
+
+        linestyle = opts.LineStyleOpts(width=2 * self.size_factor, curve=0.5)
+        tree.set_series_opts(linestyle_opts=linestyle)
+        # tree.options.update(lineStyle=linestyle)
         # tree.options['series'][0]['height'] = "90%"
         # fmt: off
         tree.add_js_funcs("chart_" + tree.chart_id + ".on('click', function(params) { console.log(params.value); });")
@@ -669,12 +663,12 @@ class MainWindow(QMainWindow):
         '''
         # data.sort(key=lambda x: x[0])
         # print(self.webTreeView.size())
-        width = int(self.webScatterView.width())
-        height = int(self.webScatterView.height())
+        width = int(self.webScatterView.width()) * self.size_factor
+        height = int(self.webScatterView.height())* self.size_factor
 
         scatter = Scatter(init_opts=opts.InitOpts(width="{}px".format(width), height="{}px".format(height)))
         scatter.add_dataset(source=data)
-        scatter.add_yaxis(series_name="", y_axis=data, symbol_size=15,
+        scatter.add_yaxis(series_name="", y_axis=data, symbol_size=15*self.size_factor,
                           label_opts=opts.LabelOpts(is_show=False),
                           itemstyle_opts=opts.ItemStyleOpts(border_color='#555')
                           )
@@ -685,7 +679,7 @@ class MainWindow(QMainWindow):
             dd = dict()
             dd.update(value=i)
             dd.update(label='cluster ' + str(i))
-            dd.update(color=scatter.colors[i])
+            dd.update(color=self.color_codes[i])
             pieces.append(dd)
 
         scatter.set_global_opts(title_opts=opts.TitleOpts(title="Scatter Plot"),
@@ -695,13 +689,15 @@ class MainWindow(QMainWindow):
                                                                   # max_=n_clusters - 2,
                                                                   pos_top='middle',
                                                                   pos_left='5',
+                                                                  item_width=15*self.size_factor,
+                                                                  item_height=15*self.size_factor,
                                                                   # split_number=n_clusters,
                                                                   pieces=pieces,
-                                                                  dimension=2
+                                                                  dimension=2,
+                                                                  textstyle_opts=opts.TextStyleOpts(font_size=12*self.size_factor)
                                                                   ))
         # Move the grid to the right
-        scatter.options.update(grid=opts.GridOpts(pos_left=150))
-
+        scatter.options.update(grid=opts.GridOpts(pos_left=200))
         # fmt: off
         scatter.add_js_funcs(
             "chart_" + scatter.chart_id + ".on('click', function(params) { console.log(params.dataIndex); });")
@@ -975,6 +971,8 @@ class MainWindow(QMainWindow):
                 if name == "root":
                     continue
                 # Get all values
+                if 'value' not in data.keys():
+                    continue
                 data_list = data['value']
                 ids = data_list[0:4]
                 data_values = data_list[4:]
@@ -1026,7 +1024,7 @@ class MainWindow(QMainWindow):
     def updatePCPdata(self, regionId):
         found = False
         for i, pcpDict in enumerate(self.PCPdata):
-            pcpDict.update(lineStyle=opts.LineStyleOpts(color="rgba(0, 0, 255, 1)", width=1, opacity=0.5))
+            pcpDict.update(lineStyle=opts.LineStyleOpts(color="rgba(0, 0, 255, 1)", width=1, opacity=0.25))
             # values = pcpDict["value"]
             # print(values, regionId)
             if pcpDict["value"][0] == regionId:
@@ -1095,7 +1093,16 @@ class MainWindow(QMainWindow):
                     self.reviseTreeJson(child)
             return
         else:
+            if ("Isovalue" not in name):
+                children = data['children']
+                if children is not None and children != []:
+                    for child in children:
+                        # Recursion
+                        self.reviseTreeJson(child)
+                else:
+                    return
             data_list = str(name).strip().split("_")
+
             profile = []
             for value in data_list:
                 if "=" in value:
@@ -1133,7 +1140,7 @@ class MainWindow(QMainWindow):
         id = str(ids[0]) + "_" + str(ids[1]) + "_" + str(ids[2])
         if id not in topIds:
             # print(data)
-            data.update(itemStyle=opts.series_options.ItemStyleOpts(opacity=1))
+            data.update(itemStyle=opts.series_options.ItemStyleOpts(opacity=0.5))
             data.update(collapsed=False)
         else:
             data.update(itemStyle=opts.series_options.ItemStyleOpts(opacity=1))
@@ -1198,6 +1205,8 @@ class MainWindow(QMainWindow):
             return newTree
 
         # Get all values
+        if 'value' not in data.keys():
+            return
         data_list = data['value']
         selected = dict()
         selected.update(name=name)
@@ -1248,12 +1257,14 @@ class MainWindow(QMainWindow):
         nNodes = int(self.nNodes_scale.value())
 
         topIds, self.PCPdata = self.findTopNodes(nNodes, selectedIdx)
-        # print(topIds)
+
         # Get the sorted subtree
         newSubTree = None
         for id in topIds:
             newSubTree = self.getSubTree(tempTreeData[0], id, newSubTree)
+
         self.updateTreeJson(newSubTree, topIds)
+
         self.update_and_load_tree([newSubTree])
         self.update_and_load_chart(self.PCPdata)
         '''
