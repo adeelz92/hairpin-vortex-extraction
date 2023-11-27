@@ -90,9 +90,8 @@ While installing, select the package "Desktop development with C++".
 8. Instructions to run the code. In the Command Prompt, cd to Path/To/Code/build/Release and run the following commands in order.
 
 	```
-	Convert_Dataset.exe "Path\To\RawFile" "Path\To\VTKfile.vtk" xDim yDim zDim
 	Create_Full_Dataset.exe "Path\To\VTKfile.vtk" "Path\To\FullDataVTKfile.vtk"
-	Compute_Histogram.exe "Path\To\FullDataVTKfile.vtk" "Path\To\Dataset_steps.csv"
+	Compute_Histogram.exe "Path\To\FullDataVTKfile.vtk" "Path\To\Dataset_steps.csv" 89
 	Region_Growing.exe "Path\To\FullDataVTKfile.vtk" "Path\To\Dataset_steps.csv" "Path\To\Dataset_Regions.vtk" "cutoff_threshold"
 	Region_Splitting.exe "Path\To\Dataset_Regions.vtk" "Path\To\Dataset_steps.csv" "Path\To\Dataset_SplitRegions.vtk" "Path\To\Dataset_SplitRegions.json" "VSF"
 	Region_Simplification.exe "Path\To\Dataset_SplitRegions.vtk" "Path\To\Dataset_SimpleRegions.vtk"
@@ -100,5 +99,20 @@ While installing, select the package "Desktop development with C++".
 	Vortex_Statistics.exe "Path\To\Dataset_Skeleton.vtk" "Path\To\Dataset_Surface.vtk" 7 "Path\To\Dataset_VortSkeleton.vtk" "Path\To\Dataset_VortSurface.vtk"
 	Profile_Construction.exe "Path\To\Dataset_SplitRegions.json" "Path\To\Dataset_SplitRegions.vtk" "Path\To\Dataset_SkelBlock.vtk" "Path\To\Dataset_SurfBlock.vtk" "Path\To\Dataset_NewSplitRegions.json"
 	```
+ 	i. "Create_Full_Dataset" command computes all the physical attributes from the velocity array.
+
+	ii. "Compute_Histogram" command implements the histogram strategy in the region growing and splitting sections of the paper.
+
+	iii. "Region_Growing" extracts the vortical regions using Lambda_2 criterion and writes the output.
+
+	iv. "Region_Splitting" performs the splitting of the region and write the results to the disk. VSF controls the split amount, refer to the paper.
+
+	v. "Region_Simplification" performs the region simplification step (refer to the paper).
+
+	vi. "Skeleton_Extraction" extracts the surfaces and skeleton of the vortices and write to the disk.
+
+	vii. "Vortex_Statistics" extracts the specified type of vortices depending upon the geometry. 7 specifies the omega/hairpin vortices. Refer to the code for setting of thresholds and additional categories.
+
+	viii. "Profile_Construction" builds the vortex profiles which can then be used for visualization in the system.
 	
 	
