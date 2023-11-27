@@ -2,9 +2,12 @@
 
 > This repository is a work in progress...
 
-**_Required_ Python >= 3.9**
+### How to run the code
+- Download the code or clone the repository. In the first step, go the the folder "splitting" and follow the readme instructions.
+- Then go to the clustering folder and perform clustering. Read the comments in the code for additional information.
+- Move the clustering results, the tree json file and the vtk file from step 1 to the same folder and follow the instructions below to visualize the results in the system.
 
-We have uploaded the code for the interactive visualization system so far. We will upload the code for the remaining modules soon.
+**_Required_ Python >= 3.9**
 
 ### How to run the interactive visualization code
 In the root folder, do the following to install all the requirements for Python.
