@@ -1019,29 +1019,25 @@ void performCorrections(vtkDataArray* regColorIds, vtkDataSet* dataset, vtkIdLis
 								LocalCellIds = RegDataset->GetCellData()->GetArray("LocalCellIds");
 								localRegColorIds = dataset->GetCellData()->GetScalars();
 							}
+							else
+							{
+								LocalCellIds = RegDataset->GetCellData()->GetArray("GlobalCellIds");
+								localRegColorIds = dataset->GetCellData()->GetScalars();
+							}
 
 							for (vtkIdType cellIdx = 0; cellIdx < numCells; cellIdx++)
 							{
 								vtkIdType globalCellId = static_cast<vtkIdType>(GlobalCellIds->GetTuple1(cellIdx));
+								vtkIdType localCellId = static_cast<vtkIdType>(LocalCellIds->GetTuple1(cellIdx));
 								if (majorId != -1)
 								{
 									regColorIds->SetTuple1(globalCellId, majorId);
+									localRegColorIds->SetTuple1(localCellId, majorId);
 								}
 								else
 								{
 									regColorIds->SetTuple1(globalCellId, 0);
-								}
-								if (isFullDataset != true)
-								{
-									vtkIdType localCellId = static_cast<vtkIdType>(LocalCellIds->GetTuple1(cellIdx));
-									if (majorId != -1)
-									{
-										localRegColorIds->SetTuple1(localCellId, majorId);
-									}
-									else
-									{
-										localRegColorIds->SetTuple1(localCellId, 0);
-									}
+									localRegColorIds->SetTuple1(localCellId, 0);
 								}
 							}
 						}
