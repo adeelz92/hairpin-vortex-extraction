@@ -4,16 +4,9 @@
 
 This repository is the implementation of paper "A. Zafar, D. Yang and G. Chen, "Extract and Characterize Hairpin Vortices in Turbulent Flows," in IEEE Transactions on Visualization and Computer Graphics, doi: 10.1109/TVCG.2023.3326603". The code and the supplemental material is distributed under CC-BY-NC-4.0. Kindly cite our papar.
 
-@ARTICLE{AZafar2023,
-  author={Zafar, Adeel and Yang, Di and Chen, Guoning},
-  journal={IEEE Transactions on Visualization and Computer Graphics}, 
-  title={Extract and Characterize Hairpin Vortices in Turbulent Flows}, 
-  year={2023},
-  volume={},
-  number={},
-  pages={1-11},
-  doi={10.1109/TVCG.2023.3326603}}
-
+```
+A. Zafar, D. Yang and G. Chen, "Extract and Characterize Hairpin Vortices in Turbulent Flows," in IEEE Transactions on Visualization and Computer Graphics, vol. 30, no. 1, pp. 716-726, Jan. 2024, doi: 10.1109/TVCG.2023.3326603. keywords: {Visualization;Shape;Behavioral sciences;Histograms;Object recognition;Data mining;Training;Turbulent flow;vortices;hairpin vortex extraction},}
+```
 
 ### How to run the code
 - In the first step, go the the folder "splitting" and follow the readme instructions.
